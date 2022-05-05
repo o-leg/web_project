@@ -51,9 +51,9 @@ body {
         border: 2px solid #0a5d5c;
         background-color: #fff;
         padding: calc(0.5rem - 2px) calc(1rem - 2px); }
-      .user_profile .user_info_container .button-wrapper .delete {
+      .user_profile .user_info_container .button-wrapper .logout__button {
         background-color: #ff5627; }
-      .user_profile .user_info_container .button-wrapper .delete:hover {
+      .user_profile .user_info_container .button-wrapper .logout__button:hover {
         color: #ff5627;
         border: 2px solid #ff5627; }
   .user_profile .user_img_container {

@@ -23,7 +23,7 @@ $borderRadius50: 50%;
   padding: calc(0.5rem - 2px)  calc(1rem - 2px);
 }
 
-@mixin delete {
+@mixin logout__button {
   background-color: #ff5627;
 }
 
