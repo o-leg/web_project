@@ -1,0 +1,49 @@
+.main{
+  height: 90%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 85%;
+  min-width: 200px;
+
+  background: white;
+
+  border-radius: 10px;
+  box-shadow: 0 0 20px -3px rgba(0,0,0,0.5);
+
+  padding: 2rem;
+}
+
+.events__list{
+  padding: 0;
+  list-style: none;
+}
+
+.event{
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr 2fr 2fr;
+  grid-gap: 3px;
+
+  align-items: center;
+
+  font-size: 18px;
+}
+
+.event__name{
+  font-weight: bold;
+}
+
+.btn{
+  font-size: 14px;
+}

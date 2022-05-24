@@ -1,0 +1,15 @@
+<main class="main">
+  <div class="container">
+    <div class="wrapper">
+        <ul class="events__list">
+          <li *ngFor="let event of events" class="event">
+            <span class="event__name">{{event.name}}</span>
+            <p>{{event.description}}</p>
+            <span>{{event.date | date:'medium'}}</span>
+            <span>{{event.location}}</span>
+            <a class="btn" (click)="relocateToTicket(event)">SHOW TICKET</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,24 @@
+<main class="main">
+  <div class="container">
+    <div class="user_profile">
+      <div class="user_img_container">
+        <img class="user_profile__img"
+             src="https://i.pinimg.com/originals/bd/94/5b/bd945b1a518afce06a405e69123974d9.jpg" alt="avatar">
+      </div>
+      <form [formGroup]="form" (submit)="submit()" class="user_info_container">
+        <label for="nickname" class="user_profile__text">Nickname:</label>
+        <input formControlName="nickname" type="text" class="user_profile__input" id="nickname" value="">
+        <label for="name" class="user_profile__text">Name:</label>
+        <input formControlName="name" type="text" class="user_profile__input" id="name" value="">
+        <label for="surname" class="user_profile__text">Surname:</label>
+        <input formControlName="surname" type="text" class="user_profile__input" id="surname" value="">
+        <label for="email" class="user_profile__text">Email:</label>
+        <input formControlName="email" type="email" class="user_profile__input" id="email" value="">
+        <div class="button-wrapper">
+          <button type="submit" class="btn submit__button">Submit</button>
+          <a (click)="relocateToMyTicket()" class='btn'>My tickets</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>

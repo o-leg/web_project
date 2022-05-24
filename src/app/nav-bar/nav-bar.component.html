@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <div class="container">
+    <ul class="list">
+      <li class="nav__element nav__title">
+        <a routerLinkActive="active" routerLink="">Tickets</a>
+      </li>
+      <li *ngIf="!authenticated" class="nav__element">
+        <a *ngIf="url !== '/login' " class="btn nav__btn" routerLinkActive="active" routerLink="/login">LOG IN</a>
+        <a *ngIf="url === '/login' " class="btn nav__btn" routerLinkActive="active" routerLink="/reg">REGISTRATION</a>
+      </li>
+      <li *ngIf="authenticated" class="nav__element">
+        <a class="btn nav__btn" routerLinkActive="active" routerLink="/user">PROFILE</a>
+        <a class="btn nav__btn" (click)="logout()">LOG OUT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
